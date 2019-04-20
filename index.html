@@ -69,7 +69,7 @@
 </script>
 
 <body>
-
+<div class="progress-bar" id="myBar"></div>
 <div id="nav" layout="row top-left">
 	<div self="left">
 		<a href="/"><div class="logo logo-isNotVisIfMobile"><img src="images/imkhoa-favicon.png" alt="">&nbsp;Khoa Nguyen</div></a>
@@ -440,6 +440,17 @@ $(function(){
         $(".header-image").css("background-image","url("+$(this).attr("src")+")");
     });
 });
+	
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.width = scrolled + "%";
+}
+	
 </script>
 <script src="js/smooth-scroll.js"></script>
 <script src="js/popup.js"></script>
