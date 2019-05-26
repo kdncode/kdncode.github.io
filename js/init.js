@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2017 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
-
 
 jQuery(document).ready(function(){
 
@@ -12,7 +6,7 @@ jQuery(document).ready(function(){
 	
 	
 	// here all ready functions
-	
+	// progress_bar()
 	edina_tm_hamburger();
 	edina_tm_imgtosvg();
 	edina_tm_magnific_popup();
@@ -42,6 +36,32 @@ jQuery(document).ready(function(){
 // -----------------------------------------------------
 // --------------------  FUNCTIONS  --------------------
 // -----------------------------------------------------
+
+// -----------------------------------------------------
+// ---------------    Progress bar    ------------------
+// -----------------------------------------------------
+
+
+
+	
+	window.onscroll = function() {progress_bar()};
+	function progress_bar() {
+		"use strict";
+		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var scrolled = (winScroll / height) * 100;
+		document.getElementById("myBar").style.width = scrolled + "%";
+	}
+
+
+// window.onscroll = function() {myFunction()};
+
+// function myFunction() {
+// 	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+// 	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+// 	var scrolled = (winScroll / height) * 100;
+// 	document.getElementById("myBar").style.width = scrolled + "%";
+// }
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------

@@ -1,9 +1,5 @@
 @charset "utf-8";
 /*
-/*	Copyright (c) 2018 Marketify
-/*	Author: Marketify
-/*	This file is made for CURRENT TEMPLATE
-
 
 	01) EDINA BASE
 	02) EDINA HEADER
@@ -50,6 +46,18 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
+
+/* My custom button */
+#my_btn {
+	background-color: #ed2629;
+	background: linear-gradient(to right, rgb(255, 99, 121), rgb(144, 112, 253));
+}
+
+#my_btn:hover {
+	background-color: #555;
+	background: linear-gradient(to right,rgb(144, 112, 253), rgb(255, 99, 121));
+}
+
 .edina_tm_wrapper_all,
 .edina_tm_section,
 .edina_tm_content{
@@ -1506,7 +1514,8 @@ img.svg{
 .edina_tm_contact_wrap .edina_tm_button a{
 	color: #fff;
     text-decoration: none;
-    background-color: #ed2629;
+	background-color: #ed2629;
+	background: linear-gradient(to right, rgb(255, 99, 121), rgb(144, 112, 253));
     padding: 8px 35px;
     display: inline-block;
     font-family: Avenir, "Montserrat";
@@ -1519,15 +1528,17 @@ img.svg{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.edina_tm_contact_wrap .edina_tm_button a:hover{background-color: #555;}
+.edina_tm_contact_wrap .edina_tm_button a:hover{background-color: #555; background: linear-gradient(to right, rgb(144, 112, 253), rgb(255, 99, 121)); }
 .edina_tm_contact_wrap .empty_notice{
 	color: #FF0004;
+	/* background: linear-gradient(to right, rgb(255, 99, 121), rgb(144, 112, 253)); */
 	margin-bottom: 7px;
 	display: none;
 	text-align: center;
 }
 .edina_tm_contact_wrap .contact_error{
 	color: rgba(255,0,4,1.00);
+	/* background: linear-gradient(to right, rgb(255, 99, 121), rgb(144, 112, 253)); */
 	text-align: center;
 }
 .edina_tm_contact_wrap .returnmessage{
