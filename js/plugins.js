@@ -1463,9 +1463,10 @@ function onYouTubePlayerAPIReady() {
 
 		getDataFromFeed: function (YTPlayer) {
 			//Get video info from FEEDS API
-
+			
 			if (!(jQuery.browser.msie && jQuery.browser.version <= 9)) {
 				jQuery.getJSON(jQuery.mbYTPlayer.locationProtocol + '//gdata.youtube.com/feeds/api/videos/' + YTPlayer.videoID + '?v=2&alt=jsonc', function (data, status, xhr) {
+				// jQuery.getJSON(jQuery.mbYTPlayer.locationProtocol + 'https://www.googleapis.com/youtube/v3/videos?id=' + YTPlayer.videoID + '&key=' + api_youtube, function (data, status, xhr) {
 					YTPlayer.dataReceived = true;
 					YTPlayer.videoData = data.data;
 					jQuery(YTPlayer).trigger("YTPChanged");
