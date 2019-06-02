@@ -1790,3 +1790,10 @@ img.svg{
 	clear: both;
 	margin: 0 auto;
 }
+
+.my_logo {
+	background-color: rgb(255, 99, 121);
+	background: linear-gradient(to right, rgb(255, 99, 121), rgb(144, 112, 253));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
