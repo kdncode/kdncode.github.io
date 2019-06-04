@@ -159,6 +159,7 @@ img.svg{
 	position: absolute;
 	left: 0px;
 	top: -3px;
+	z-index: 99999;
 }
 .edina_tm_navigation_wrap .nav_list_wrap{
 	width: 100%;
