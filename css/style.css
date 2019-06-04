@@ -1797,3 +1797,12 @@ img.svg{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.definition_portfolio .first {
+	margin-top:160px;
+}
+
+.edina_tm_portfolio_list .list_inner .definition_portfolio {
+	height: 350px;
+	background: transparent;
+}
