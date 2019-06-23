@@ -1807,3 +1807,8 @@ img.svg{
 	height: 350px;
 	background: transparent;
 }
+
+/* hamburger on top of logo */
+.edina_tm_trigger .hamburger-box {
+	z-index: 99999;
+}
