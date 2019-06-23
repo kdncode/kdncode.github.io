@@ -1810,5 +1810,9 @@ img.svg{
 
 /* hamburger on top of logo */
 .edina_tm_trigger .hamburger-box {
+	width: 30px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
 	z-index: 99999;
 }
