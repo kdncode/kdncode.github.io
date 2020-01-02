@@ -60,13 +60,13 @@
     <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
     <!-- /STYLES -->
 	
-     <!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-WN7MP8F');</script>
-      <!-- End Google Tag Manager -->
+	<!-- End Google Tag Manager -->
 
 </head>
 
@@ -112,8 +112,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
 						<div class="social_icons_wrap">
 							<ul>
-								<li><a href="https://github.com/kdncode" target="_blank"><i class="fab fa-github"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/imkhoa/" target="_blank"><i class="xcon-linkedin"></i></a></li>
+								<li><a href="https://github.com/kdncode" target="_blank"><i class="fab fa-github" id="github-web"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/imkhoa/" target="_blank"><i class="xcon-linkedin" id="linkedin-web"></i></a></li>
 							</ul>
                         </div>
 					</div>
@@ -145,8 +145,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="edina_tm_navigation_wrap">
 				<div class="social_icons_wrap" style="left: 20px; top: 79%;">
 						<ul>
-							<li><a href="https://github.com/kdncode" target="_blank"><i class="fab fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/imkhoa/" target="_blank"><i class="xcon-linkedin"></i></a></li>
+							<li><a href="https://github.com/kdncode" target="_blank"><i class="fab fa-github" id="github-mobile"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/imkhoa/" target="_blank"><i class="xcon-linkedin" id="linkedin-mobile"></i></a></li>
 							<li><a href="https://twitter.com/kdncode" target="_blank"><i class="xcon-twitter"></i></a></li>
 						</ul>
 					</div>
@@ -185,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap">
 										<div class="invite">
 											<a href="https://drive.google.com/file/d/1ND0sJbTYcknCdJFpChmy4vuXJCdj_7Vx/view", 
-											class="my_btn" target="_blank">Download Resume <i class="fas fa-download"></i></a>
+											class="my_btn" id="download_btn" target="_blank">Download Resume <i class="fas fa-download"></i></a>
 										</div>
 									</div>
 								</div>
@@ -390,7 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://github.com/kdncode/tensorFlow-react", 
-											class="my_btn" target="_blank">Code <i class="fas fa-code"></i></a>
+											class="my_btn" id="project_1" target="_blank">Code <i class="fas fa-code"></i></a>
 										</div>
 									</div>
 								</div>
@@ -409,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://github.com/kdncode/amazon-clone", 
-											class="my_btn" target="_blank">Code <i class="fas fa-code"></i></a>
+											class="my_btn" id="project_2" target="_blank">Code <i class="fas fa-code"></i></a>
 										</div>
 									</div>
 								</div>
@@ -428,7 +428,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://github.com/kdncode/twitter-clone", 
-											class="my_btn" target="_blank">Code <i class="fas fa-code"></i></a>
+											class="my_btn" id="project_3" target="_blank">Code <i class="fas fa-code"></i></a>
 										</div>
 									</div>
 								</div>
@@ -447,7 +447,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://github.com/kdncode/react-airbnb", 
-											class="my_btn" target="_blank">Code <i class="fas fa-code"></i></a>
+											class="my_btn" id="project_4" target="_blank">Code <i class="fas fa-code"></i></a>
 										</div>
 									</div>
 								</div>
@@ -466,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://github.com/kdncode/vets", 
-											class="my_btn" target="_blank">Code <i class="fas fa-code"></i></a>
+											class="my_btn" id="project_5" target="_blank">Code <i class="fas fa-code"></i></a>
 										</div>
 									</div>
 								</div>
@@ -485,7 +485,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="edina_tm_work_together_wrap" style="margin-top: 10px">
 										<div class="invite">
 											<a href="https://yourcityweather.herokuapp.com/", 
-											class="my_btn" target="_blank">Demo <i class="fas fa-video"></i></a>
+											class="my_btn" id="project_6" target="_blank">Demo <i class="fas fa-video"></i></a>
 										</div>
 									</div>
 								</div>
@@ -819,7 +819,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- FOOTER -->
 		<div class="edina_tm_section">
 			<div class="edina_tm_footer_wrap">
-				<p class="wow fadeIn"  data-wow-duration="1.2s">&copy; Copyright 2019. <a href="https://imkhoa.com">Khoa Nguyen</a></p>
+				<p class="wow fadeIn"  data-wow-duration="1.2s">&copy; Copyright 2020. <a href="https://imkhoa.com">Khoa Nguyen</a></p>
 			</div>
 		</div>
 		<!-- /FOOTER -->
