@@ -1816,3 +1816,40 @@ img.svg{
     position: relative;
 	z-index: 99999;
 }
+
+/* Font color animation with gradient */
+.color_animation {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(45deg,#f35626,#01ff9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(50deg);
+    }
+    
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
+
+.color_animation_2 {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(45deg,#48d35d,#bfe30a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
