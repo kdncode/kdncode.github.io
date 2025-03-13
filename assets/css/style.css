@@ -7916,7 +7916,8 @@ body.template-color-1 {
       font-size: 36px;
       position: relative;
       transition: 0.5s;
-      top: 2px; }
+      top: 2px;
+      cursor: pointer; }
 
 @media only screen and (max-width: 1199px) {
   #sideNav {
